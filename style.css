@@ -152,13 +152,21 @@ a {
 header {
   height: 60px;
   display: flex;
+  align-items: center;
+}
+header .fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 header img {
   height: 30px;
   padding: 10px;
   display: block;
   margin: auto;
-  align-content: center;
+}
+header a {
+  color: black;
 }
 
 .footer {

@@ -1,11 +1,19 @@
 header{
     height: 60px;
     display: flex;
+    align-items: center;
+    & .fa-arrow-left{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
     & img{
         height: 30px;
         padding: 10px;
         display: block;
         margin: auto;
-        align-content: center;
+    }
+    & a{
+        color: black;
     }
 }
