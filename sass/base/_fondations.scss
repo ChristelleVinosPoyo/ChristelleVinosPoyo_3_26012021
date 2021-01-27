@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: $typo-text;
+}
+a 
+{
+    text-decoration:none; /* pour enlever la mise en forme des liens */
+}
+.bloc-recherche{
+    &__partie-explorez h2{
+        font-weight: 300;
+        font-size: 1em;
+    }
+}
+.footer{
+    color: white;
+    &__contenu h4{
+        font-family: $typo-titre;
+        font-size: 1.2em;
+    }
+    & a{
+        color: white;
+    }
+    
+}

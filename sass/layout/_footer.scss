@@ -1,0 +1,20 @@
+.footer{
+    background: $color-background-footer;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    &__contenu{
+        width: 90%;
+    }
+    & ul{
+        list-style-type: none;
+        padding: 0;
+        line-height: 25px;
+    }
+    & .fas{
+        margin-right: 10px;
+    }
+    & .fa-hands-helping{
+        font-size: 0.65em;
+    }
+}

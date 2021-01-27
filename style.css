@@ -1,0 +1,185 @@
+.bloc-recherche {
+  background: #f1efef;
+}
+.bloc-recherche__partie-formulaire {
+  text-align: center;
+  background: #eae7e7;
+}
+.bloc-recherche__partie-formulaire input {
+  height: 30px;
+  border: none;
+  background: #eae7e7;
+  text-align: center;
+}
+.bloc-recherche__partie-explorez {
+  text-align: center;
+}
+.bloc-recherche__partie-explorez button {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bloc-fonctionnement {
+  width: 90%;
+  margin: auto;
+}
+.bloc-fonctionnement ol {
+  display: block;
+  margin: auto;
+  padding: 0;
+}
+.bloc-fonctionnement li {
+  position: relative;
+  list-style-type: none;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.bloc-fonctionnement .fas {
+  color: grey;
+  margin: 0 20px 0 20px;
+}
+.bloc-fonctionnement .fa-mobile-alt {
+  margin-right: 28px;
+}
+.bloc-fonctionnement .fa-list {
+  margin-right: 25px;
+}
+.bloc-fonctionnement span {
+  position: absolute;
+  left: -8px;
+  top: 16px;
+  color: white;
+  background: #9356DC;
+  padding: 3px 8px 3px 8px;
+  border-radius: 50%;
+}
+
+/* _______________________________section-restaurants_______________________________ */
+.section-restaurants {
+  width: 100%;
+  height: 1400px;
+  background: #f1efef;
+}
+.section-restaurants h3 {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  padding-top: 30px;
+}
+.section-restaurants__conteneur {
+  width: 100%;
+  height: 1250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-restaurants a {
+  color: black;
+}
+
+.carte-restaurant {
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.carte-restaurant__img {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.carte-restaurant__contenu {
+  width: 95%;
+  height: 25%;
+  line-height: 25px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.carte-restaurant__contenu .fa-heart {
+  position: absolute;
+  right: 10px;
+  font-size: 1.4em;
+}
+.carte-restaurant__contenu h4 {
+  margin: 0;
+}
+.carte-restaurant__contenu address {
+  font-style: normal;
+  font-weight: 400;
+}
+.carte-restaurant adress {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  /* pour enlever la mise en forme des liens */
+}
+
+.bloc-recherche__partie-explorez h2 {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.footer {
+  color: white;
+}
+.footer__contenu h4 {
+  font-family: Shrikhand;
+  font-size: 1.2em;
+}
+.footer a {
+  color: white;
+}
+
+header {
+  height: 60px;
+  display: flex;
+}
+header img {
+  height: 30px;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  align-content: center;
+}
+
+.footer {
+  background: #353535;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.footer__contenu {
+  width: 90%;
+}
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 25px;
+}
+.footer .fas {
+  margin-right: 10px;
+}
+.footer .fa-hands-helping {
+  font-size: 0.65em;
+}
+
+/*# sourceMappingURL=style.css.map */

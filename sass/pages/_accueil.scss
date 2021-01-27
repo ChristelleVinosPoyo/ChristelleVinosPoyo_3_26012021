@@ -1,0 +1,121 @@
+
+.bloc-recherche{
+    background: $color-background;
+    &__partie-formulaire{
+        text-align: center;
+        background: darken($color-background, 3%);
+    }
+    &__partie-formulaire input{
+        height: 30px;
+        border: none;
+        background: darken($color-background, 3%);
+        text-align: center;
+    }
+    &__partie-explorez{
+        text-align: center
+    }
+    &__partie-explorez button{
+    @include button;
+    }
+}
+
+.bloc-fonctionnement{
+    width: 90%;
+    margin: auto;
+    & ol{
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+    & li{
+        position: relative;
+        list-style-type: none;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        @include box-shadow
+    }
+    & .fas{
+        color: grey;
+        margin: 0 20px 0 20px;
+    }
+    & .fa-mobile-alt{
+        margin-right: 28px;
+    }
+    & .fa-list{
+        margin-right: 25px;
+    }
+
+    & span{
+        position: absolute;
+        left: -8px;
+        top: 16px;
+        color: white;
+        background: $color-primary;
+        padding: 3px 8px 3px 8px;
+        border-radius: 50%;
+    }
+}
+
+/* _______________________________section-restaurants_______________________________ */
+
+.section-restaurants{
+    width: 100%;
+    height: 1400px;
+    background: $color-background;
+    & h3{
+        width: 90%;
+        height: 40px;
+        margin: auto;
+        padding-top: 30px;
+    }
+    &__conteneur{
+        width: 100%;
+        height: 1250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    & a{
+        color: black;
+    }
+}
+
+.carte-restaurant{
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    @include box-shadow;
+    &__img{
+        width: 100%;
+        height: 75%;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+    }
+    &__contenu{
+        width: 95%;
+        height: 25%;
+        line-height: 25px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    &__contenu .fa-heart{
+        position: absolute;
+        right: 10px;
+        font-size: 1.4em;
+        }
+    &__contenu h4{
+        margin: 0;
+    }
+    &__contenu address{
+        font-style: normal;
+        font-weight: 400;
+    }
+    & adress{
+        text-decoration: none;
+    }
+}
