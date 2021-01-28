@@ -7,15 +7,17 @@
         width: 90%;
         height: 30px;
         border: none;
-        border-radius: 20px;
+        border-radius: 10px;
         @include box-shadow;
+        font-family: $typo-text;
     }
     & textarea{
         width: 90%;
         height: 120px;
         border: none;
-        border-radius: 20px;
+        border-radius: 10px;
         @include box-shadow;
+        font-family: $typo-text;
     }
     &__btn-envoyer{
         @include button;

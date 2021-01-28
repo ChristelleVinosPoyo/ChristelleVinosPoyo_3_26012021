@@ -1,12 +1,20 @@
 
+/* ________Couleurs____________________________________________________ */
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background:  #f1efef;
 $color-background-footer: #353535;
 
+/* ________Typo________________________________________________________ */
+
 $typo-titre: Shrikhand;
 $typo-text: Roboto;
+
+/* ________Angles arrondis_____________________________________________ */
+
+$border-radius: 20px;
 
 @mixin box-shadow{
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
