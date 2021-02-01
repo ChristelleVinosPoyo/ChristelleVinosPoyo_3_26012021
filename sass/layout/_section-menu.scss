@@ -64,12 +64,36 @@
         height: 70px;
         background: white;
         border-radius: $border-radius;
-        @include box-shadow;
+        box-shadow: $box-shadow;
         padding-left: 10px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
+        justify-content: space-between;
+        &__plats{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+        }
+        &__plats span{
+            font-size: 1em;
+            font-weight: 500;
+            margin: 0;
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+        }
+    
+        &__check{
+            overflow: hidden;
+            width: 0px;
+            height: 70px;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            background: $color-tertiary;
+            border-radius: 0 $border-radius $border-radius 0;
+        }
     }
     &__item h4{
         font-size: 1.2em;
@@ -80,14 +104,6 @@
         font-size: 0.9em;
         font-weight: 300;
         margin: 0;
-    }
-    &__item span{
-        font-size: 1em;
-        font-weight: 500;
-        margin: 0;
-        position: absolute;
-        right: 20px;
-        bottom: 15px;
     }
 
 
