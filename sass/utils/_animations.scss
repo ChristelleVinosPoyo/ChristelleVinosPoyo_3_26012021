@@ -1,0 +1,12 @@
+.carte-restaurant{
+    &__contenu .fa-heart-contour:hover{
+        color: transparent;
+    }
+    &__contenu .fa-heart-plein:hover{
+/* ________pour dégradé de couleur sur du texte_____________________________________________ */
+        background:-webkit-linear-gradient(top, $color-primary 30%, $color-secondary 70%);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+}
