@@ -2,15 +2,25 @@
 /* ________Couleurs____________________________________________________ */
 /* ________Typo________________________________________________________ */
 /* ________Angles arrondis_____________________________________________ */
-.carte-restaurant__contenu .fa-heart-contour:hover {
-  color: transparent;
-}
-.carte-restaurant__contenu .fa-heart-plein:hover {
+.carte-restaurant__contenu .fa-heart-plein {
   /* ________pour dégradé de couleur sur du texte_____________________________________________ */
   background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  display: block;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.carte-restaurant__contenu:hover .fa-heart-plein {
+  opacity: 1;
+}
+.carte-restaurant__contenu .fa-heart-contour {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.carte-restaurant__contenu:hover .fa-heart-contour {
+  opacity: 0;
 }
 
 .bloc-recherche {
@@ -122,17 +132,6 @@
   justify-content: center;
   position: relative;
 }
-.carte-restaurant__contenu .fa-heart-contour {
-  position: absolute;
-  right: 10px;
-  font-size: 1.4em;
-}
-.carte-restaurant__contenu .fa-heart-plein {
-  position: absolute;
-  right: 9px;
-  font-size: 1.5em;
-  color: transparent;
-}
 .carte-restaurant__contenu h4 {
   margin: 0;
 }
@@ -142,6 +141,16 @@
 }
 .carte-restaurant adress {
   text-decoration: none;
+}
+.carte-restaurant__contenu .fa-heart-contour {
+  position: absolute;
+  right: 10px;
+  font-size: 1.4em;
+}
+.carte-restaurant__contenu .fa-heart-plein {
+  position: absolute;
+  right: 9px;
+  font-size: 1.5em;
 }
 
 body {

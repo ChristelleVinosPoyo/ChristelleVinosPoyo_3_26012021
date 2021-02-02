@@ -102,17 +102,6 @@
         justify-content: center;
         position: relative;
     }
-    &__contenu .fa-heart-contour{
-        position: absolute;
-        right: 10px;
-        font-size: 1.4em;
-        }
-    &__contenu .fa-heart-plein{
-        position: absolute;
-        right: 9px;
-        font-size: 1.5em;
-        color: transparent;
-    }
     &__contenu h4{
     margin: 0;
     }
@@ -122,5 +111,15 @@
     }
     & adress{
         text-decoration: none;
+    }
+    &__contenu .fa-heart-contour{
+        position: absolute;
+        right: 10px;
+        font-size: 1.4em;
+        }
+    &__contenu .fa-heart-plein{
+        position: absolute;
+        right: 9px;
+        font-size: 1.5em;
     }
 }
