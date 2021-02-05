@@ -69,7 +69,7 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        & span{
+        & .prix{
             overflow: hidden;
             font-size: 1em;
             font-weight: 500;
@@ -82,13 +82,24 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        &__check-conteneur{
+            width: 20%;
+            height: 70px;
+            border-radius: 0 $border-radius $border-radius 0;
+            background: transparent;
+            z-index: 2;
+            overflow: hidden;
         }
         &__check{
             overflow: hidden;
             height: 70px;
             color: white;
             text-align: center;
+            line-height: 70px;
             background: $color-tertiary;
             border-radius: 0 $border-radius $border-radius 0;
         }

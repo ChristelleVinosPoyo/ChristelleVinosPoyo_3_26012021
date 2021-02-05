@@ -54,20 +54,25 @@ button::after {
 
 /* ______________________          Animation au surol du prix des plats :         ____________________________ */
 .carte-menu__item__check {
-  width: 0%;
-  transition: width 500ms;
+  transform: translate(100%);
+  transition: transform 500ms;
 }
 .carte-menu__item:hover .carte-menu__item__check {
-  width: 20%;
+  transform: translate(0);
+}
+.carte-menu__item__check .fa-check-circle {
+  transform: rotate(0);
+  transition: transform 500ms;
+}
+.carte-menu__item:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 .carte-menu__item__plats {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
+  width: 80%;
   transition: width 500ms;
 }
 .carte-menu__item:hover .carte-menu__item__plats {
-  width: 70%;
+  width: 65%;
 }
 .carte-menu__item .prix {
   width: 10%;
@@ -391,7 +396,7 @@ header a {
   justify-content: space-between;
   position: relative;
 }
-.carte-menu__item span {
+.carte-menu__item .prix {
   overflow: hidden;
   font-size: 1em;
   font-weight: 500;
@@ -404,13 +409,24 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte-menu__item__check-conteneur {
+  width: 20%;
+  height: 70px;
+  border-radius: 0 20px 20px 0;
+  background: transparent;
+  z-index: 2;
+  overflow: hidden;
 }
 .carte-menu__item__check {
   overflow: hidden;
   height: 70px;
   color: white;
   text-align: center;
+  line-height: 70px;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
