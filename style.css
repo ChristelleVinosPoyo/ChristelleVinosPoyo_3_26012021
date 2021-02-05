@@ -2,25 +2,80 @@
 /* ________Couleurs____________________________________________________ */
 /* ________Typo________________________________________________________ */
 /* ________Angles arrondis_____________________________________________ */
+/* ______________________          Animation au surol des coeurs :         ____________________________ */
 .carte-restaurant__contenu .fa-heart-plein {
-  /* ________pour dégradé de couleur sur du texte_____________________________________________ */
+  /* ________pour dégradé de couleur sur du texte___________ */
   background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   display: block;
   opacity: 0;
-  transition: opacity 500ms;
+  transition: opacity 400ms;
 }
 .carte-restaurant__contenu:hover .fa-heart-plein {
   opacity: 1;
 }
 .carte-restaurant__contenu .fa-heart-contour {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 250ms;
 }
 .carte-restaurant__contenu:hover .fa-heart-contour {
   opacity: 0;
+}
+
+/* ______________________          Animation au surol des boutons :         ____________________________ */
+button {
+  position: relative;
+  z-index: 1;
+}
+button:hover::after {
+  opacity: 1;
+}
+button::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+/* ______________________          Animation au surol des bloc-fonctionnement en page d'accueil :         ____________________________ */
+.bloc-fonctionnement li:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+}
+
+/* ______________________          Animation au surol du prix des plats :         ____________________________ */
+.carte-menu__item__check {
+  width: 0%;
+  transition: width 500ms;
+}
+.carte-menu__item:hover .carte-menu__item__check {
+  width: 20%;
+}
+.carte-menu__item__plats {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  transition: width 500ms;
+}
+.carte-menu__item:hover .carte-menu__item__plats {
+  width: 70%;
+}
+.carte-menu__item .prix {
+  width: 10%;
+  transform: translateX(0);
+  transition: transform 500ms;
+}
+.carte-menu__item:hover .prix {
+  transform: translateX(-140%);
 }
 
 .bloc-recherche {
@@ -334,15 +389,10 @@ header a {
   padding-left: 10px;
   display: flex;
   justify-content: space-between;
-}
-.carte-menu__item__plats {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
-  width: 100%;
 }
-.carte-menu__item__plats span {
+.carte-menu__item span {
+  overflow: hidden;
   font-size: 1em;
   font-weight: 500;
   margin: 0;
@@ -350,15 +400,22 @@ header a {
   right: 20px;
   bottom: 15px;
 }
+.carte-menu__item__plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
 .carte-menu__item__check {
   overflow: hidden;
-  width: 0%;
   height: 70px;
   color: white;
   text-align: center;
-  vertical-align: middle;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
+}
+.carte-menu__item__check span {
+  line-height: 70px;
 }
 .carte-menu__item h4 {
   font-size: 1.2em;

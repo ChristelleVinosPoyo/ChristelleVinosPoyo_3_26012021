@@ -1,23 +1,86 @@
-.carte-restaurant{
+/* ______________________          Animation au surol des coeurs :         ____________________________ */
+
+        .carte-restaurant{
     &__contenu .fa-heart-plein{
-        /* ________pour dégradé de couleur sur du texte_____________________________________________ */
+        /* ________pour dégradé de couleur sur du texte___________ */
         background:-webkit-linear-gradient(top, $color-primary 30%, $color-secondary 70%);
         background-clip:text;
         -webkit-background-clip:text;
         color:transparent;
         display: block;
         opacity: 0;
-        transition: opacity 500ms;
+        transition: opacity 400ms;
     }
     &__contenu:hover .fa-heart-plein{
         opacity: 1;
     }
     &__contenu .fa-heart-contour{
         opacity: 1;
-        transition: opacity 300ms;
+        transition: opacity 250ms;
     }
     &__contenu:hover .fa-heart-contour{
         opacity: 0;
     }
+}
+/* ______________________          Animation au surol des boutons :         ____________________________ */
 
+button{
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;}
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        border-radius: $border-radius;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(lighten($color-secondary,5), lighten($color-primary,5));
+        box-shadow: $box-shadow-survol;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 250ms;
+    }
+}
+/* ______________________          Animation au surol des bloc-fonctionnement en page d'accueil :         ____________________________ */
+
+.bloc-fonctionnement{
+    & li:hover{
+        background-color: rgba($color-primary, 0.15);
+    }
+}
+
+/* ______________________          Animation au surol du prix des plats :         ____________________________ */
+
+.carte-menu{
+    &__item__check{
+        width: 0%;
+        transition: width 500ms;
+        }
+    &__item:hover .carte-menu__item__check{
+        width: 20%;
+    }
+
+    &__item__plats{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        transition: width 500ms;
+    }
+    &__item:hover .carte-menu__item__plats{
+        width: 70%;
+    }
+
+    &__item .prix{
+        width: 10%;
+        transform : translateX(0);
+        transition : transform 500ms;
+    }
+    &__item:hover .prix{
+        transform : translateX(-140%)
+    }
 }
