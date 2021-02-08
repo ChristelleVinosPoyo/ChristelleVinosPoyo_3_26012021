@@ -86,6 +86,12 @@
             white-space: nowrap;
             text-overflow: ellipsis;
         }
+        /* pour ajouter "..." quand le texte est coupé :    */
+        /* ne fonctionne que si le texte est en une seule ligne    */
+        &__plats h4, p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         &__check-conteneur{
             width: 20%;
             height: 70px;

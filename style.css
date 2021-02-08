@@ -83,6 +83,7 @@ button::after {
   transform: translateX(-140%);
 }
 
+/* ______________________          Animation au chargement, arrivée des plats :         ____________________________ */
 .bloc-recherche {
   background: #f1efef;
 }
@@ -395,6 +396,8 @@ header a {
   display: flex;
   justify-content: space-between;
   position: relative;
+  /* pour ajouter "..." quand le texte est coupé :    */
+  /* ne fonctionne que si le texte est en une seule ligne    */
 }
 .carte-menu__item .prix {
   overflow: hidden;
@@ -411,6 +414,10 @@ header a {
   justify-content: center;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte-menu__item__plats h4, .carte-menu__item p {
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .carte-menu__item__check-conteneur {
