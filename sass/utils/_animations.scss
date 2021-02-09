@@ -9,10 +9,12 @@
     color:transparent;
     display: block;
     opacity: 0;
-    transition: opacity 400ms;
+    transform : scale(1);
+    transition: opacity 400ms, transform 400ms;
     }
     &__heart .fa-heart-plein:hover{
         opacity: 1;
+        transform: scale(1.07);
     }
     &__heart .fa-heart-contour{
         opacity: 1;
@@ -117,12 +119,28 @@ button{
 }
 /* ______________________          Animation du loader         ____________________________ */
 
-@keyframes loader{
+@keyframes loader-primary{
     0% {
         transform: rotate(0);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(360*3deg);
+    }
+}
+@keyframes loader-secondary{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360*2deg);
+    }
+}
+@keyframes loader-tertiary{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360*2deg);
     }
 }
 @keyframes loader-opacity{
@@ -154,7 +172,7 @@ button{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 800px;
+    height: 100%;
     background: $color-background-footer;
     animation: loader-opacity 3000ms;
     &__logo{
@@ -179,7 +197,7 @@ button{
         border-radius: 50%;
         border: transparent solid 8px;
         border-top-color: $color-primary;
-        animation: loader 3000ms linear;
+        animation: loader-primary 3000ms linear;
     }
     &__quart-color-secondary{
         position: absolute;
@@ -188,7 +206,7 @@ button{
         border-radius: 50%;
         border: transparent solid 8px;
         border-top-color: $color-secondary;
-        animation: loader 3000ms linear;
+        animation: loader-secondary 3000ms linear;
 
     }
     &__quart-color-tertiary{
@@ -198,7 +216,7 @@ button{
         border-radius: 50%;
         border: transparent solid 8px;
         border-top-color: $color-tertiary;
-        animation: loader 3000ms linear;
+        animation: loader-tertiary 3000ms linear;
 
     }
 }
