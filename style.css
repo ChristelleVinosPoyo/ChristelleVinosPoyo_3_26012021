@@ -3,7 +3,7 @@
 /* ________Typo________________________________________________________ */
 /* ________Angles arrondis_____________________________________________ */
 /* ______________________          Animation au surol des coeurs :         ____________________________ */
-.carte-restaurant__contenu .fa-heart-plein {
+.carte-restaurant__heart .fa-heart-plein {
   /* ________pour dégradé de couleur sur du texte___________ */
   background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
   background-clip: text;
@@ -13,14 +13,14 @@
   opacity: 0;
   transition: opacity 400ms;
 }
-.carte-restaurant__contenu:hover .fa-heart-plein {
+.carte-restaurant__heart .fa-heart-plein:hover {
   opacity: 1;
 }
-.carte-restaurant__contenu .fa-heart-contour {
+.carte-restaurant__heart .fa-heart-contour {
   opacity: 1;
   transition: opacity 250ms;
 }
-.carte-restaurant__contenu:hover .fa-heart-contour {
+.carte-restaurant__heart .fa-heart-plein:hover .fa-heart-contour {
   opacity: 0;
 }
 
@@ -284,6 +284,7 @@ button::after {
   height: 300px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 .carte-restaurant__img {
   width: 100%;
@@ -299,7 +300,6 @@ button::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 .carte-restaurant__contenu h4 {
   margin: 0;
@@ -311,14 +311,16 @@ button::after {
 .carte-restaurant adress {
   text-decoration: none;
 }
-.carte-restaurant__contenu .fa-heart-contour {
+.carte-restaurant__heart .fa-heart-contour {
   position: absolute;
   right: 10px;
+  bottom: 20px;
   font-size: 1.4em;
 }
-.carte-restaurant__contenu .fa-heart-plein {
+.carte-restaurant__heart .fa-heart-plein {
   position: absolute;
   right: 9px;
+  bottom: 19px;
   font-size: 1.5em;
 }
 

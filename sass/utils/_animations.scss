@@ -1,24 +1,24 @@
 /* ______________________          Animation au surol des coeurs :         ____________________________ */
 
-        .carte-restaurant{
-    &__contenu .fa-heart-plein{
-        /* ________pour dégradé de couleur sur du texte___________ */
-        background:-webkit-linear-gradient(top, $color-primary 30%, $color-secondary 70%);
-        background-clip:text;
-        -webkit-background-clip:text;
-        color:transparent;
-        display: block;
-        opacity: 0;
-        transition: opacity 400ms;
+.carte-restaurant{
+    &__heart .fa-heart-plein{
+    /* ________pour dégradé de couleur sur du texte___________ */
+    background:-webkit-linear-gradient(top, $color-primary 30%, $color-secondary 70%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    display: block;
+    opacity: 0;
+    transition: opacity 400ms;
     }
-    &__contenu:hover .fa-heart-plein{
+    &__heart .fa-heart-plein:hover{
         opacity: 1;
     }
-    &__contenu .fa-heart-contour{
+    &__heart .fa-heart-contour{
         opacity: 1;
         transition: opacity 250ms;
     }
-    &__contenu:hover .fa-heart-contour{
+    &__heart .fa-heart-plein:hover .fa-heart-contour{
         opacity: 0;
     }
 }
