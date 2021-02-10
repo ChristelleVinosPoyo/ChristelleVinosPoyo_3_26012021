@@ -1,17 +1,15 @@
 .bloc-recherche{
     background: $color-background;
+    text-align: center;
     &__partie-formulaire{
-        text-align: center;
         background: darken($color-background, 3%);
     }
     &__partie-formulaire input{
         height: 30px;
         border: none;
         background: darken($color-background, 3%);
-        text-align: center;
     }
     &__partie-explorez{
-        text-align: center
     }
     &__partie-explorez button{
     @include button;

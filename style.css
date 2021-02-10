@@ -212,19 +212,15 @@ button::after {
 
 .bloc-recherche {
   background: #f1efef;
+  text-align: center;
 }
 .bloc-recherche__partie-formulaire {
-  text-align: center;
   background: #eae7e7;
 }
 .bloc-recherche__partie-formulaire input {
   height: 30px;
   border: none;
   background: #eae7e7;
-  text-align: center;
-}
-.bloc-recherche__partie-explorez {
-  text-align: center;
 }
 .bloc-recherche__partie-explorez button {
   border: none;
@@ -409,41 +405,6 @@ header a {
   font-size: 0.65em;
 }
 
-.formulaire-contact {
-  background-color: #f1efef;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.formulaire-contact__email {
-  width: 90%;
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  font-family: Roboto;
-}
-.formulaire-contact textarea {
-  width: 90%;
-  height: 120px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  font-family: Roboto;
-}
-.formulaire-contact__btn-envoyer {
-  border: none;
-  padding: 10px 20px 10px 20px;
-  margin: 20px;
-  border-radius: 30px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
-}
-.formulaire-contact label {
-  margin: 20px;
-}
-
 .section-menu {
   background: #f1efef;
   display: flex;
@@ -577,6 +538,68 @@ header a {
   font-size: 0.9em;
   font-weight: 300;
   margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .section-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    background-color: #f1efef;
+  }
+
+  .bloc-recherche {
+    width: 50%;
+    text-align: left;
+    font-size: 1.4em;
+    margin-top: 20px;
+  }
+  .bloc-recherche br {
+    display: none;
+  }
+  .bloc-recherche button {
+    margin-left: 0;
+  }
+  .bloc-recherche__partie-formulaire {
+    background: white;
+    padding: 0 10px;
+    border-radius: 20px;
+    width: 40%;
+  }
+  .bloc-recherche__partie-formulaire input {
+    background: white;
+  }
+
+  .bloc-fonctionnement {
+    width: 40%;
+    margin: 0;
+    background: white;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .bloc-fonctionnement h3 {
+    margin: 20px;
+    font-size: 1.2em;
+  }
+  .bloc-fonctionnement ol {
+    margin: 0 20px;
+  }
+
+  .section-restaurants {
+    height: 410px;
+  }
+  .section-restaurants__conteneur {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 320px;
+    width: 90%;
+  }
+
+  .carte-restaurant {
+    width: 23%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

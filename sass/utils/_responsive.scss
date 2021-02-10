@@ -1,0 +1,58 @@
+@media screen and (min-width: 1280px){
+
+    .section-intro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+        background-color: $color-background;
+    }
+    .bloc-recherche{
+        width: 50%;
+        text-align: left;
+        font-size: 1.4em;
+        margin-top: 20px;
+        & br{
+            display: none;
+        }
+        & button{
+            margin-left: 0;
+        }
+        &__partie-formulaire{
+            background: white;
+            padding: 0 10px;
+            border-radius: $border-radius;
+            width: 40%;
+        }
+        &__partie-formulaire input{
+            background: white;
+        }
+    }
+    .bloc-fonctionnement{
+        width: 40%;
+        margin: 0;
+        background: white;
+        border-radius: $border-radius;
+        margin-top: 20px;
+        & h3{
+            margin: 20px;
+            font-size: 1.2em;
+        }
+        & ol{
+            margin: 0 20px;
+        }
+    }
+    .section-restaurants{
+        height: 410px;
+        &__conteneur{
+            flex-direction: row;
+            justify-content: space-between;
+            height: 320px;
+            width: 90%;
+        }
+    }
+    .carte-restaurant{
+        width: 23%;
+    }
+}
