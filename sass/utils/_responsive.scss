@@ -1,5 +1,7 @@
-@media screen and (min-width: 1280px){
 
+
+@media screen and (min-width: 1280px){
+/* _______________________        page d'accueil        _________________________ */
     .section-intro{
         display: flex;
         flex-direction: row;
@@ -11,7 +13,7 @@
     .bloc-recherche{
         width: 50%;
         text-align: left;
-        font-size: 1.4em;
+        font-size: 1.3em;
         margin-top: 20px;
         & br{
             display: none;
@@ -44,15 +46,36 @@
         }
     }
     .section-restaurants{
-        height: 410px;
+        height: 430px;
         &__conteneur{
             flex-direction: row;
             justify-content: space-between;
             height: 320px;
-            width: 90%;
+            width: 95%;
+            margin: auto;
         }
     }
     .carte-restaurant{
         width: 23%;
     }
+/* _______________________        pages restaurant        _________________________ */
+    .section-menu{
+        &__header{
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__header img{
+            display: block;
+        }
+    }       
+    .conteneur-entrees-plats-dessert{
+        flex-direction: row; 
+        justify-content: space-evenly;
+    }
+    .carte-menu{
+        width: 30%;
+    }
+
 }
