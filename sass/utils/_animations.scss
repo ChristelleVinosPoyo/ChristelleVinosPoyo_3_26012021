@@ -116,6 +116,10 @@ button{
         animation: arrivée-des-plats 700ms 700ms;
         animation-fill-mode: backwards;
     }
+    &__item:nth-child(5){
+        animation: arrivée-des-plats 700ms 1000ms;
+        animation-fill-mode: backwards;
+    }
 }
 /* ______________________          Animation du loader         ____________________________ */
 

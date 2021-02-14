@@ -46,7 +46,7 @@
 }
 .carte-menu{
     width: 95%;
-    height: 300px;
+    height: auto;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -62,10 +62,11 @@
         height: 3px;
         border: none;
         background-color: $color-tertiary;
-        margin: 0;
+        margin: 0 0 15px 0;
     }
     &__item{
         height: 70px;
+        margin: 5px 0px;
         background: white;
         border-radius: $border-radius;
         box-shadow: $box-shadow;

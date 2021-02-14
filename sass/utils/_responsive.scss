@@ -1,6 +1,23 @@
-
-
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 600px) and (max-width: 999px){
+    .section-menu{
+        flex-direction: row-reverse;
+        &__header{
+            height: auto;
+            width: 100%;
+        }
+        &__header img{
+            height: 100%;
+            width: auto;
+            top : 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__contenu{
+            transform: translateY(0);
+        }
+    }
+}
+    @media screen and (min-width: 1000px){
 /* _______________________        page d'accueil        _________________________ */
     .section-intro{
         display: flex;
@@ -73,6 +90,7 @@
     .conteneur-entrees-plats-dessert{
         flex-direction: row; 
         justify-content: space-evenly;
+        align-items: flex-start;
     }
     .carte-menu{
         width: 30%;
