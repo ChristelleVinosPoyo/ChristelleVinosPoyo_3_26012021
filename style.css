@@ -2,6 +2,7 @@
 /* ________Couleurs____________________________________________________ */
 /* ________Typo________________________________________________________ */
 /* ________Angles arrondis_____________________________________________ */
+/* ________Ombres______________________________________________________ */
 /* ______________________          Animation au surol des coeurs :         ____________________________ */
 .carte-restaurant__heart .fa-heart-plein {
   /* ________pour dégradé de couleur sur du texte___________ */
@@ -12,18 +13,24 @@
   display: block;
   opacity: 0;
   transform: scale(1);
+  transform: scale(1);
   transition: opacity 400ms, transform 400ms;
 }
 .carte-restaurant__heart .fa-heart-plein:hover {
   opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
   transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
 }
 .carte-restaurant__heart .fa-heart-contour {
   opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
   transition: opacity 250ms;
-}
-.carte-restaurant__heart .fa-heart-plein:hover .fa-heart-contour {
-  opacity: 0;
+  -moz-transition: opacity 250ms;
+  -webkit-transition: opacity 250ms;
 }
 
 /* ______________________          Animation au surol des boutons :         ____________________________ */
@@ -49,12 +56,12 @@ button::after {
   transition: opacity 250ms;
 }
 
-/* ______________________          Animation au surol des bloc-fonctionnement en page d'accueil           ____________________________ */
+/* ______________________          Animation au survol des bloc-fonctionnement en page d'accueil           ____________________________ */
 .bloc-fonctionnement li:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
 
-/* ______________________          Animation au surol du prix des plats          ____________________________ */
+/* ______________________          Animation au survol du prix des plats          ____________________________ */
 .carte-menu__item__check {
   transform: translate(100%);
   transition: transform 500ms;
@@ -183,7 +190,7 @@ button::after {
 }
 .loader__logo h3 {
   margin: 0;
-  font-family: Shrikhand;
+  font-family: Shrikhand, cursive;
   font-size: 1.5em;
 }
 .loader__quart-color-primary {
@@ -223,7 +230,7 @@ button::after {
 }
 .bloc-recherche__partie-formulaire input {
   width: 110px;
-  height: 30px;
+  height: 50px;
   border: none;
   background: #eae7e7;
 }
@@ -367,7 +374,7 @@ button::after {
 
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 a {
@@ -384,7 +391,7 @@ a {
   color: white;
 }
 .footer__contenu h4 {
-  font-family: Shrikhand;
+  font-family: Shrikhand, cursive;
   font-size: 1.2em;
 }
 .footer a {
@@ -395,6 +402,8 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
+  border-bottom-color: #e5e1e1;
+  border-bottom-style: inset;
 }
 header .fa-arrow-left {
   position: absolute;
@@ -460,7 +469,7 @@ header a {
   flex-direction: column;
 }
 .section-menu__contenu h1 {
-  font-family: Shrikhand;
+  font-family: Shrikhand, cursive;
   width: 95%;
   margin: auto;
   padding: 20px 0;
@@ -589,6 +598,10 @@ header a {
   }
   .section-menu__contenu {
     transform: translateY(0);
+  }
+
+  .bloc-fonctionnement ol {
+    width: 400px;
   }
 }
 @media screen and (min-width: 1000px) {

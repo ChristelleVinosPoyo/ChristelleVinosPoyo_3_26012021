@@ -16,6 +16,11 @@
             transform: translateY(0);
         }
     }
+    .bloc-fonctionnement{
+        & ol{
+            width: 400px;
+        }
+    }
 }
     @media screen and (min-width: 1000px){
 /* _______________________        page d'accueil        _________________________ */

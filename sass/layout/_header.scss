@@ -2,6 +2,8 @@ header{
     height: 60px;
     display: flex;
     align-items: center;
+    border-bottom-color:  darken($color-background, 5%);
+    border-bottom-style: inset;
     & .fa-arrow-left{
         position: absolute;
         left: 20px;

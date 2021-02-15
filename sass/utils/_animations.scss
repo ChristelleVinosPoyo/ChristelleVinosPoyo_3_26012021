@@ -4,24 +4,32 @@
     &__heart .fa-heart-plein{
     /* ________pour dégradé de couleur sur du texte___________ */
     background:-webkit-linear-gradient(top, $color-primary 30%, $color-secondary 70%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     display: block;
     opacity: 0;
+    transform : scale(1);
     transform : scale(1);
     transition: opacity 400ms, transform 400ms;
     }
     &__heart .fa-heart-plein:hover{
         opacity: 1;
+        -moz-opacity : 1;
+        -webkit-opacity: 1;
         transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+
     }
     &__heart .fa-heart-contour{
         opacity: 1;
+        -moz-opacity: 1;
+        -webkit-opacity: 1;
         transition: opacity 250ms;
-    }
-    &__heart .fa-heart-plein:hover .fa-heart-contour{
-        opacity: 0;
+        -moz-transition: opacity 250ms;
+        -webkit-transition: opacity 250ms;
+
     }
 }
 /* ______________________          Animation au surol des boutons :         ____________________________ */
@@ -48,7 +56,7 @@ button{
         transition: opacity 250ms;
     }
 }
-/* ______________________          Animation au surol des bloc-fonctionnement en page d'accueil           ____________________________ */
+/* ______________________          Animation au survol des bloc-fonctionnement en page d'accueil           ____________________________ */
 
 .bloc-fonctionnement{
     & li:hover{
@@ -56,7 +64,7 @@ button{
     }
 }
 
-/* ______________________          Animation au surol du prix des plats          ____________________________ */
+/* ______________________          Animation au survol du prix des plats          ____________________________ */
 
 .carte-menu{
     &__item__check{
