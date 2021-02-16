@@ -22,7 +22,7 @@
         }
     }
 }
-    @media screen and (min-width: 1000px){
+@media screen and (min-width: 1180px){
 /* _______________________        page d'accueil        _________________________ */
     .section-intro{
         display: flex;
@@ -79,11 +79,8 @@
     }
     .carte-restaurant{
         width: 23%;
-        &__img img{
-            height: 100%;
-            width: auto;
         }
-    }
+}
 /* _______________________        pages restaurant        _________________________ */
     .section-menu{
         &__header{
@@ -105,28 +102,28 @@
         width: 30%;
     }
 
-}
-@media screen and (min-width: 1260px){
-    .carte-restaurant:nth-child(2){
-        & img{
-            height: auto;
-            width: 100%;
-        }
-    }
-}
-@media screen and (min-width: px){
-    .carte-restaurant:nth-child(1){
-        & img{
-            height: auto;
-            width: 100%;
-        }
-    }
-}
-@media screen and (min-width: 1440px){
-    .carte-restaurant:nth-child(3), .carte-restaurant:nth-child(1), .carte-restaurant:nth-child(4){
-        & img{
-            height: auto;
-            width: 100%;
-        }
-    }
-}
+
+// @media screen and (min-width: 1260px){
+//     .carte-restaurant:nth-child(2){
+//         & img{
+//             height: auto;
+//             width: 100%;
+//         }
+//     }
+// }
+// @media screen and (min-width: px){
+//     .carte-restaurant:nth-child(1){
+//         & img{
+//             height: auto;
+//             width: 100%;
+//         }
+//     }
+// }
+// @media screen and (min-width: 1440px){
+//     .carte-restaurant:nth-child(3), .carte-restaurant:nth-child(1), .carte-restaurant:nth-child(4){
+//         & img{
+//             height: auto;
+//             width: 100%;
+//         }
+//     }
+// }
