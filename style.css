@@ -7,7 +7,6 @@
 .carte-restaurant__heart .fa-heart-plein {
   /* ________pour dégradé de couleur sur du texte___________ */
   background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   display: block;
@@ -18,19 +17,11 @@
 }
 .carte-restaurant__heart .fa-heart-plein:hover {
   opacity: 1;
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
   transform: scale(1.07);
-  -moz-transform: scale(1.07);
-  -webkit-transform: scale(1.07);
 }
 .carte-restaurant__heart .fa-heart-contour {
   opacity: 1;
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
   transition: opacity 250ms;
-  -moz-transition: opacity 250ms;
-  -webkit-transition: opacity 250ms;
 }
 
 /* ______________________          Animation au surol des boutons :         ____________________________ */
@@ -402,8 +393,7 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
-  border-bottom-color: #e5e1e1;
-  border-bottom-style: inset;
+  border-bottom: 3px solid #efecec;
 }
 header .fa-arrow-left {
   position: absolute;
@@ -666,6 +656,10 @@ header a {
   .carte-restaurant {
     width: 23%;
   }
+  .carte-restaurant__img img {
+    height: 100%;
+    width: auto;
+  }
 
   /* _______________________        pages restaurant        _________________________ */
   .section-menu__header {
@@ -686,6 +680,24 @@ header a {
 
   .carte-menu {
     width: 30%;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .carte-restaurant:nth-child(2) img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: px) {
+  .carte-restaurant:nth-child(1) img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carte-restaurant:nth-child(3) img, .carte-restaurant:nth-child(1) img, .carte-restaurant:nth-child(4) img {
+    height: auto;
+    width: 100%;
   }
 }
 
