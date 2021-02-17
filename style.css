@@ -446,7 +446,8 @@ header a {
   width: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .section-menu__contenu {
   width: 100%;
@@ -594,7 +595,7 @@ header a {
     width: 400px;
   }
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1000px) {
   /* _______________________        page d'accueil        _________________________ */
   .section-intro {
     display: flex;
@@ -656,26 +657,49 @@ header a {
   .carte-restaurant {
     width: 23%;
   }
-}
-/* _______________________        pages restaurant        _________________________ */
-.section-menu__header {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-menu__header img {
-  display: block;
-}
+  .carte-restaurant__img img {
+    height: 100%;
+    width: auto;
+  }
 
-.conteneur-entrees-plats-dessert {
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
+  /* _______________________        pages restaurant        _________________________ */
+  .section-menu__header {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-menu__header img {
+    display: block;
+  }
 
-.carte-menu {
-  width: 30%;
+  .conteneur-entrees-plats-dessert {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .carte-menu {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .carte-restaurant:nth-child(2) img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: px) {
+  .carte-restaurant:nth-child(1) img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carte-restaurant:nth-child(3) img, .carte-restaurant:nth-child(1) img, .carte-restaurant:nth-child(4) img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
