@@ -19,10 +19,6 @@
   opacity: 1;
   transform: scale(1.07);
 }
-.carte-restaurant__heart .fa-heart-contour {
-  opacity: 1;
-  transition: opacity 250ms;
-}
 
 /* ______________________          Animation au surol des boutons :         ____________________________ */
 button {
@@ -363,6 +359,10 @@ button::after {
   font-size: 1.5em;
 }
 
+/*      Règles valables sur tout le site
+        Typo : nom, taille, couleur
+        Liens : pas de décoration
+*/
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -371,6 +371,11 @@ body {
 a {
   text-decoration: none;
   /* pour enlever la mise en forme des liens */
+}
+
+button:hover {
+  /* pour enlever le contour rouge qui apparait au clic sur les boutons */
+  outline-style: none;
 }
 
 .bloc-recherche__partie-explorez h2 {
